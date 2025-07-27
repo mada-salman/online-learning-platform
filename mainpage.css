@@ -1,0 +1,427 @@
+/* Original CSS (unchanged) */
+body {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-futuristic-shape-abstract-background-chemistry-technology-concept-for-website-image_438818.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  ul li {
+    list-style: none;
+    margin-left: 62px;
+    font-size: 14px;
+  }
+  ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+  }
+  ul li a:hover {
+    color: #ff7200;
+  }
+  div a:hover {
+    color: #ff7200;
+  }
+  #tot {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #sub1 {
+    background-color: #6366f1;
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub2 {
+    background-color: #10b981;
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub3 {
+    background-color: #ff3333;
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub4 {
+    background-color: rgb(56, 255, 189);
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub5 {
+    background-color: rgb(68, 218, 68);
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub6 {
+    background-color: rgb(196, 196, 67);
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub7 {
+    background-color: rgb(56, 40, 175);
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub8 {
+    background-color: rgb(193, 90, 182);
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  #sub9 {
+    background-color: rgb(0, 229, 255);
+    height: 320px;
+    width: 320px;
+    border: 2px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .column {
+    flex: 1;
+    padding: 40px;
+    border: 1px solid #ffffff;
+  }
+  
+  /* Form Popup Styles */
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow-y: auto;
+  }
+  .form-container {
+    position: relative;
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+  }
+  .close-btn:hover {
+    color: #000;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  .error-message {
+    color: #ff4444;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+  .password-hint {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+  }
+  .password-strength {
+    margin-top: 10px;
+  }
+  .strength-bar {
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 3px;
+    width: 0;
+    transition: all 0.3s ease;
+  }
+  .strength-text {
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    display: block;
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+  .switch-form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .switch-form a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  .switch-form a:hover {
+    text-decoration: underline;
+  }
+  .terms-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .terms-group input[type="checkbox"] {
+    width: auto;
+  }
+  
+  /* Course Card Animations */
+  #sub1, #sub2, #sub3, #sub4, #sub5, #sub6, #sub7, #sub8, #sub9 {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  #sub1:hover, #sub2:hover, #sub3:hover, #sub4:hover, 
+  #sub5:hover, #sub6:hover, #sub7:hover, #sub8:hover, #sub9:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    #tot {
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 1 1 50%;
+    }
+  }
+  @media (max-width: 768px) {
+    .column {
+      flex: 1 1 100%;
+      padding: 20px;
+    }
+    ul li {
+      margin-left: 30px;
+    }
+    .form-container {
+      margin: 10% auto;
+      width: 95%;
+      padding: 20px;
+    }
+    .about-content,
+    .contact-container {
+      flex-direction: column;
+    }
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 480px) {
+    #sub1, #sub2, #sub3, #sub4, #sub5, 
+    #sub6, #sub7, #sub8, #sub9 {
+      width: 100%;
+    }
+    .form-container {
+      padding: 20px;
+    }
+  }
+  
+  /* Scrollbar Styling */
+  .form-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  .form-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  .form-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  .form-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Loading Animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .loading-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  /* Accessibility */
+  a:focus, button:focus, input:focus {
+    outline: 2px dashed #ff7200;
+    outline-offset: 3px;
+  }
+  
+  /* Scroll-to-top Button */
+  .scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #ff7200;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+    transition: all 0.3s;
+  }
+  .scroll-top:hover {
+    transform: scale(1.1);
+  }
+  .scroll-top.show {
+    display: block;
+  }
+
+  /* Animation for form popups */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .form-popup {
+    animation: fadeIn 0.3s ease;
+  }
+
+  /* Footer Styles */
+  footer {
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50);
+    padding: 40px 20px;
+    margin-top: 50px;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+  }
+
+  footer div {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  footer div:first-child {
+    font-size: 16px;
+    color: #bdc3c7;
+    letter-spacing: 1px;
+  }
+
+  footer div:nth-child(2) {
+    font-size: 20px;
+    color: #3498db;
+    font-weight: bold;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 2em;
+    color: #00ffff;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
+    }
+    to {
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+    }
+  }
+
+  /* Responsive Footer */
+  @media (max-width: 768px) {
+    footer {
+      padding: 30px 15px;
+    }
+    
+    footer div:nth-child(2) {
+      font-size: 18px;
+    }
+    
+    footer p {
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 480px) {
+    footer {
+      padding: 20px 10px;
+    }
+    
+    footer div:nth-child(2) {
+      font-size: 16px;
+    }
+    
+    footer p {
+      font-size: 1.2em;
+    }
+  }
